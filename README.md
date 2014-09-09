@@ -6,7 +6,7 @@ This plugin needs jQuery 1.9.x or higher to work.
 
 ## Examples
 
-Please note the custom HTML attributes `toggle-id` `toggle-class` and `toggle-reverse` in the HTML snippets below.
+Please note the custom HTML attributes `toggle-id`, `toggle-class` and `toggle-reverse` in the HTML snippets below.
 
 ### Standard toggler
 This toggler toggles an element based on it's `id` HTML attribute.
