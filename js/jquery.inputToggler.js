@@ -4,6 +4,7 @@
 			// These are the defaults.
 			effect: false,
 			duration: 400,
+			focusOnExpand: true,
 			onHide: function(elementToToggle) {},
 			onShow: function(elementToToggle) {}
 		}, options);
@@ -54,6 +55,10 @@
 					elementToToggle.slideDown(settings.duration);
 				else
 					elementToToggle.show();
+
+				if(settings.focusOnExpand === true) {
+					elementToToggle.find(':input:first').focus();
+				}
 				
 				settings.onShow(elementToToggle);
 			} else if(!checked && elementToToggle.css('display') != 'none') {
