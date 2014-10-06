@@ -5,6 +5,7 @@
 			effect: false,
 			duration: 400,
 			focusOnExpand: true,
+			focusOnExpandSelector: ':input:not(input:checkbox,input:radio)',
 			onHide: function(elementToToggle) {},
 			onShow: function(elementToToggle) {}
 		}, options);
@@ -57,7 +58,7 @@
 					elementToToggle.show();
 
 				if(settings.focusOnExpand === true) {
-					elementToToggle.find(':input:first').focus();
+					elementToToggle.find(settings.focusOnExpandSelector + ':first').focus();
 				}
 				
 				settings.onShow(elementToToggle);
